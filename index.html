@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Currency Converter</h2>
+    <p>Click the button to open currency exchange calculator</p>
+    <button id="calculte" type="button" onclick="handleCalculation()">
+      calculate currency exchange
+    </button>
+    <hr />
+    <h2>Currency Search</h2>
+    <p>Enter any search term to lookup a currency and its 3 digit code. To see a list of all curruncies type "all"</p>
+    <div>
+      <label for="search">Search</label>
+      <input type="search" id="search" name="fname" />
+      <button type="submit" id="submit" onclick=searchCurrencies()>Search</button>
+    <dialog id="searchDialog">
+        <span class="close" onclick="closeSearch()">&times;</span>
+      <h2>Search Results</h2>
+      <ul id="currencies"></ul>
+    </dialog>
+    <script src="currency.js"></script>
+  </body>
+</html>

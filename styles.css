@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(42, 42, 42);
+}
+
+hr { margin: 20px 0 10px 0; }
+
+
+h2, p, label {
+    color: rgb(255, 255, 255);
+}
+
+dialog h2 {
+  color: black;
+}
+
+label {
+  display: block;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+:modal {
+  display: auto;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+dialog {
+    width: 25%;
+    height: 30%; 
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
