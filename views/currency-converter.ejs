@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top">
+        <header>
+          <%- include('partials/header') -%>
+        </header>
+        <div id="feature-title">
+          <p>Currency Converter</p>
+        </div>
+        <div id="feature-container">
+          <%- include('partials/featureTabs') -%>
+          <div id="form-area">
+            <form action='/currencyconverter' method="post" id="convert-form">
+              <div id="feature-form">
+                <div class="form-element">
+                  <label for="amount">Amount</label>
+                  <span id="dollar-symbol">$</span>
+                  <input type="text" name="amount" id="amount" />
+                </div>
+                <div class="form-element">
+                  <label for="from">From</label>
+                  <select
+                    name="from"
+                    id="from"
+                    class="currency-select"
+                  ></select>
+                </div>
+                <div>
+                  <div id="spacer"></div>
+                  <div id="icon-container">
+                    <img id="switch" src="images/Vector.png" alt="swap" />
+                  </div>
+                </div>
+                <div class="form-element">
+                  <label for="to">To</label>
+                  <select
+                    type="text"
+                    name="to"
+                    id="to"
+                    class="currency-select"
+                  ></select>
+                </div>
+              </div>
+              <div>
+                <button id="exchange-button" type="submit">Convert</button>
+              </div>
+            </form>
+          </div>
+          <% if(data) { %>
+            <div id="results">
+              <p id="submitted-amount"><%= data.from %></p>
+              <p id="converted-amount"><%= data.to %></p>
+              <p id="base-rate"><%= data.rate %></p>
+            </div>
+            <% } %>
+        </div>
+        <div id="tables-container">
+          <div>
+            <table id="base-to-target">
+              <thead>
+                <tr>
+                  <th colspan="2">Test</th>
+                </tr>
+                <tr>
+                  <th colspan="2">Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td value="1">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="5">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="10">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="25">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="50">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="100">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="500">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="1000">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="5000">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="10000">test</td>
+                  <td value="">test</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <table id="target-to-base">
+              <thead>
+                <tr>
+                  <th colspan="2">Test</th>
+                </tr>
+                <tr>
+                  <th colspan="2">Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td value="1">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="5">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="10">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="25">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="50">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="100">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="500">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="1000">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="5000">test</td>
+                  <td value="">test</td>
+                </tr>
+                <tr>
+                  <td value="10000">test</td>
+                  <td value="">test</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="javascripts/functions.js"></script>
+</html>

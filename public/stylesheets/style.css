@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#container,
+#feature-title,
+#icon-container,
+#form-area,
+.feature-button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top {
+  background: linear-gradient(#02208a 100%, #02208a 83%);
+  height: 387px;
+  width: 100%;
+}
+
+header {
+  padding: 21px 30px;
+}
+
+#logo,
+nav a,
+#feature-title,
+#register-button,
+#exchange-button {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo,
+#feature-title {
+  font-size: 3rem;
+}
+
+#main-nav {
+  width: 620px;
+  justify-content: space-around;
+}
+
+#signIn-reg {
+  width: 218px;
+  justify-content: space-around;
+}
+
+#register-button {
+  margin-left: 20px;
+  font-size: 1rem;
+  width: 119px;
+  height: 49px;
+  background-color: #0085ff;
+  border-radius: 10px;
+}
+
+#feature-title {
+  height: 160px;
+}
+
+#feature-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 315px;
+  width: 1097px;
+  box-shadow: 0px 4px 6px 2px #00000040;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+}
+
+#feature-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 73px;
+  background-color: gray;
+  text-align: center;
+  overflow: hidden;
+}
+
+#feature-tabs a {
+  text-decoration: none;
+  color: #02208a;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feature-button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#feature-tabs a:nth-of-type(1) {
+  border-radius: 10px 0px 0px 0px;
+}
+#feature-tabs a:nth-of-type(4) {
+  border-radius: 0px 10px 0px 0px;
+}
+
+#form-area {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.form-element {
+  display: block;
+  position: relative;
+}
+
+#feature-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+form {
+  width: 100%;
+}
+
+input,
+label {
+  display: block;
+}
+
+#dollar-symbol {
+  position: absolute;
+  top: 50%;
+  padding-left: 10px;
+}
+
+.form-element input,
+select {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  padding: 20px;
+}
+
+#spacer {
+  height: 15px;
+}
+
+#icon-container {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#icon-container:hover {
+  cursor: pointer;
+}
+
+#exchange-button {
+  height: 49px;
+  width: 119;
+  font-size: 20px;
+  background: #0085ff;
+  border-radius: 10px;
+  margin-top: 39px;
+  margin-left: 940px;
+  padding: 10px;
+}
+
+#results p,
+td,
+thead {
+  font-family: "Montserrat", sans-serif;
+}
+
+#submitted-amount,
+#base-rate {
+  font-size: 1.25rem;
+}
+
+#converted-amount {
+  font-size: 2rem;
+}
+
+#tables-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  width: 1097px;
+}
+
+#tables-container div {
+  width: 500px;
+  height: 616px;
+  border-radius: 10px;
+  border: 1px;
+  background-color: white;
+}
+
+table {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  border-spacing: 0;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #ECEFF4;
+}
+
+table {
+  margin: 1rem auto;
+}
+
+td {
+  padding: 0.5rem;
+}

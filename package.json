@@ -1,0 +1,18 @@
+{
+  "name": "currencyconverterv3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "set DEBUG=myapp:* & npm run devstart"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "helmet": "^7.1.0"
+  }
+}
