@@ -4,7 +4,8 @@ const from = document.getElementById("from");
 const swap = document.getElementById("icon-container");
 const chartForm = document.getElementById('chart-form')
 const tableDiv = document.getElementById('table')
-const key = `978bcb581f72f4a00babcc7c`;
+// key is private
+const key = ``;
 
 async function getData(url) {
   const response = await fetch(url);
